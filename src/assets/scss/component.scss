@@ -1,0 +1,174 @@
+@import "./settings";
+
+.component {
+  background-color: $grey-light;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .card-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .primary-color {
+    background-color: $blue1 !important;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 70px 0 20px;
+    align-items: center;
+    margin: 0;
+    .form-control {
+      width: 50%;
+      height: 31px;
+      font-size: 15px;
+    }
+  }
+
+  .btn-primary {
+    background-color: $blue1 !important;
+  }
+
+  .pagination {
+    .page-item {
+      &.active {
+        .page-link {
+          background-color: $blue1 !important;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding: 0;
+
+    .table {
+      th {
+        border-top: 0;
+      }
+    }
+  }
+
+  .inLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content {
+    margin-bottom: 3em;
+    margin-top: 2em;
+  }
+
+  .form {
+    padding: 1em 2em;
+  }
+
+  .row-style {
+    width: 50%;
+  }
+
+  .title-backgroud {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #23406b88;
+  }
+
+  .title-page {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .hidden_header {
+    display: none;
+  }
+
+  .cascading-admin-card {
+    margin: 20px 0;
+  }
+  .cascading-admin-card .admin-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: flex-start;
+  }
+  .cascading-admin-card .admin-up .fas,
+  .cascading-admin-card .admin-up .far {
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.2), 0 2px 13px 0 rgba(0, 0, 0, 0.19);
+    padding: 1.7rem;
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1rem;
+    border-radius: 3px;
+  }
+  .cascading-admin-card .admin-up .data {
+    margin-top: 40px;
+    text-align: right;
+  }
+
+  .admin-up .data p {
+    color: #706e6e;
+    font-size: 18px;
+  }
+
+  .button-plus {
+    display: flex;
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 50%;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-pagata {
+    width: 25px;
+    height: 25px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    background-color: $green !important;
+  }
+
+  .button-pagare {
+    width: 25px;
+    height: 25px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    background-color: $red !important;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $blue;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  height: 30px;
+}
